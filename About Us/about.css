@@ -1,0 +1,275 @@
+    html{
+    overflow-x: hidden;
+    }
+    
+    body{
+        margin: 0%;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+        background-color: black;
+    }
+    
+/* --------------------------------------NAVBAR------------------------------------------------- */
+    .navbar{
+        background-color: white;
+        border-radius: 5px;
+        padding: 0px;
+    }
+
+    .LOGO{
+        width: 230px;
+        height: 70px; 
+        margin: 0px; 
+        padding: 0px;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: white;
+        border: solid 3px black;
+        border-radius: 10px;
+    }
+
+    .navbar-nav li a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0.5rem;
+        font-size: 24px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .nav-link:hover {
+        font-size: 26px;
+        color: blue !important;
+    }
+
+    .nav-link:active {
+        color: blue !important;
+    }
+
+    .navbar-light .navbar-nav .current {
+        color: red;
+    }
+
+    .btn{
+        padding: 8px 10px 8px 10px;
+       
+        font-size: 18px;
+        color: white;
+        background-color: rgb(38, 0, 255);
+        margin-right: 0.5rem;
+        margin-left: 0.6rem;
+        border-radius: 15px;
+    }
+
+    .btn:hover{
+        font-size: 20px;
+        color: black;
+        background-color: rgb(0, 174, 255);
+    }
+/* --------------------------------------------------------------About US------------------------- */
+.abthead{
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.abtpara{
+    margin: 2rem 3rem 2rem 3rem;
+    text-align: justify;
+    color: white;
+    font-size: 21px;
+}
+
+
+.abtimg{
+    margin: auto;
+    width: 80%;
+    height: 550px;
+    display: block;
+    text-align: center;
+}
+/* ----------------------------------------Team----------------------------------------- */
+
+.outer{
+    color: white;
+    display: flex;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    
+    
+}
+
+.outer .inner{
+    display: flex;
+    width: 50%;
+}
+
+.outer .inner .inside {
+    width: 50%;
+}
+
+
+
+.outer .inner .inside .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+.outer .inner .inside .teamname{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.outer .inner .inside .teampos{
+  
+    font-size: 20px;
+}
+
+.last .inner{
+    width: 100%;
+}
+
+
+    /* -------------------------------------------Partner-------------------------- */
+.partner .pt{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.partner .prt{
+    width: 100%;
+    height: 225px;
+    margin-top: 0px;
+}
+
+
+/* -----------------------------------------Footer--------------------------- */
+
+.page-footer h5{
+ color: white;
+}
+
+.page-footer p{
+    margin-top: 1rem;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.page-footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.page-footer li a:hover{
+    color: rgb(0, 174, 255);
+    font-size: 23px;
+}
+
+.page-footer li{
+    margin-top: 1rem;
+}
+ .page-footer .footer-copyright{
+     color: white;
+ }
+
+
+ .fa{
+     font-size: 22px;
+     margin-top: 1.25rem;
+     margin-left: 2rem;
+    }
+
+    .h5, h5 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    /* ------------------------------------------Responsiveness--------------------------------------- */
+@media (max-width: 800px){
+
+
+    /* ----------------------------Navbar------------------------------------------------------ */
+    .navbar-light .navbar-toggler {
+        color: white;
+        border: solid 3px black;
+        border-radius: 10px;
+    }
+
+    .navbar-nav li a {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-left: 0.5rem;
+        font-size: 22px;
+    }
+
+    .btn{
+        margin-bottom: 0.5rem;
+    }
+
+    /* ----------------------------------------------------About---------------------------------------- */
+
+    .abthead{
+        margin-top: 3rem;
+    }
+
+    .abtpara{
+        margin: 2rem 1.5rem 2rem 1.5rem;
+        text-align: justify;
+        color: white;
+        font-size: 20px;
+    }
+
+    .abtimg{
+        margin: auto;
+        width: 90%;
+        height: 225px;
+        display: block;
+        text-align: center;
+    }
+
+    /* ----------------------------------------------------------team--------------------------------- */
+
+    
+    .outer{
+        display: inline;
+        margin-top: 3rem;
+    }
+    .outer .inner .inside .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .outer .inner{
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+
+
+    /* --------------------------------------------Partner-------------------------------------- */
+
+    .partner img{
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 200px;
+    }
+
+    .partner .prt{
+        height: 125px;
+    }
+/* ----------------------------------Footer----------------------------- */
+   
+}
