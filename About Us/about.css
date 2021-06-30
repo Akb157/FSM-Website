@@ -78,6 +78,11 @@
     font-size: 3rem;
 }
 
+.abthead:hover{
+    font-size: 3.5rem;
+    
+}
+
 .abtpara{
     margin: 2rem 3rem 2rem 3rem;
     text-align: justify;
@@ -98,8 +103,7 @@
 .outer{
     color: white;
     display: flex;
-    margin: auto;
-    margin-top: 4rem;
+    margin: 4rem 0.5rem 0rem 0.5rem;
     text-align: center;
     
     
@@ -108,18 +112,23 @@
 .outer .inner{
     display: flex;
     width: 50%;
+    margin-right: 1rem;
 }
 
 .outer .inner .inside {
     width: 50%;
 }
 
-
-
 .outer .inner .inside .icon {
     width: 100px;
     height: 100px;
     border-radius: 50px;
+}
+
+.outer .inner .inside .icon:hover{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
 }
 
 
@@ -135,8 +144,17 @@
     font-size: 20px;
 }
 
+.last{
+    margin: 4rem 0rem;
+}
 .last .inner{
-    width: 100%;
+    margin-right: 1.5rem;
+    width: auto;
+}
+
+.last .inner .inside{
+    padding: 0rem 1.75rem 0rem 1.75rem;
+    width: auto;
 }
 
 
@@ -255,6 +273,16 @@
     .outer .inner{
         width: 100%;
         margin-top: 3rem;
+    }
+
+    .last .inner .inside{
+        padding: 0rem;
+        width: 50%;
+    }
+
+    .last .inner .lt{
+        margin: auto;
+       width: 75%;
     }
 
 
