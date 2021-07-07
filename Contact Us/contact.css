@@ -70,6 +70,14 @@ html{
         color: black;
         background-color: rgb(0, 174, 255);
     }
+
+    .IN{
+        display: inline-block;
+    }
+
+    .OUT{
+        display: none;
+    }
 /* ----------------------------------------------------ContactUs---------------------------------------- */
 
 #contact{

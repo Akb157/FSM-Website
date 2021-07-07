@@ -71,6 +71,14 @@ html{
         background-color: rgb(0, 174, 255);
     }
 
+    .IN{
+        display: inline-block;
+    }
+
+    .OUT{
+        display: none;
+    }
+
 
 /* -------------------------------------Carousel----------------------------------- */
 .carousel-inner .carousel-item img{

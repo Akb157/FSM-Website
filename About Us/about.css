@@ -70,6 +70,14 @@
         color: black;
         background-color: rgb(0, 174, 255);
     }
+
+    .IN{
+        display: inline-block;
+    }
+
+    .OUT{
+        display: none;
+    }
 /* --------------------------------------------------------------About US------------------------- */
 .abthead{
     margin-top: 4rem;
