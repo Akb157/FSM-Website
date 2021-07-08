@@ -66,23 +66,22 @@
           <div class="enter">
             <button
               class="btn IN"
+              id="lin"
               onclick="window.location.href='./Log In/login.html';"
             >
               Log In
             </button>
             <button
               class="btn IN"
+              id="sin"
               onclick="window.location.href='./SignUP/signup.html';"
             >
               Sign Up
             </button>
 
-            <button
-              class="btn OUT"
-            >
+            <button class="btn OUT" id="logouts">
               Log Out
             </button>
-
           </div>
         </div>
       </div>
@@ -203,11 +202,11 @@
           <h4 class="card-title">Mr. P SIVARAM</h4>
           <p class="design">President, Automation Industry Association</p>
           <p class="card-text">
-            Mr. Sivaram  has nearly forty years of work experience, most
-            notably having served as the MD of B&R Industrial Automation India,
-            for over 20 years, which he founded in 1996. As the current
-            President of AIA, Mr Sivaram has been a key contributor to the
-            National policy for SAMARTH UDYOG.
+            Mr. Sivaram has nearly forty years of work experience, most notably
+            having served as the MD of B&R Industrial Automation India, for over
+            20 years, which he founded in 1996. As the current President of AIA,
+            Mr Sivaram has been a key contributor to the National policy for
+            SAMARTH UDYOG.
           </p>
           <a href="#" class="btn btn-primary">Read More..</a>
         </div>
@@ -384,5 +383,31 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <!-- Below is the additional script for Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
+        authDomain: "iafsm-website.firebaseapp.com",
+        databaseURL: "https://iafsm-website-default-rtdb.firebaseio.com",
+        projectId: "iafsm-website",
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+
+      const logoutBtn = document.querySelector("#logouts");
+      logoutBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        auth.signOut();
+        console.log("User signed out!");
+        alert("User signed out!");
+      });
+    </script>
+
+    <script src="./Authentication/auth.js"></script>
   </body>
 </html>

@@ -64,23 +64,22 @@
           <div class="enter">
             <button
               class="btn IN"
+              id="lin"
               onclick="window.location.href='../Log In/login.html';"
             >
               Log In
             </button>
             <button
               class="btn IN"
+              id="sin"
               onclick="window.location.href='../SignUP/signup.html';"
             >
               Sign Up
             </button>
 
-            <button
-              class="btn OUT"
-            >
+            <button class="btn OUT" id="logouts">
               Log Out
             </button>
-
           </div>
         </div>
       </div>
@@ -199,6 +198,8 @@
 
       firebase.initializeApp(firebaseConfig);
 
+      const auth = firebase.auth();
+
       var messagesRef = firebase.database().ref("User Data");
 
       document
@@ -234,5 +235,6 @@
         });
       }
     </script>
+
   </body>
 </html>
