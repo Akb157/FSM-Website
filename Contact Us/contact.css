@@ -13,7 +13,7 @@ html{
 /* --------------------------------------NAVBAR------------------------------------------------- */
     .navbar{
         background-color: white;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         padding: 0px;
     }
 
@@ -233,7 +233,7 @@ h5{
     .navbar-light .navbar-toggler {
         color: white;
         border: solid 3px black;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .navbar-nav li a {

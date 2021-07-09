@@ -27,7 +27,7 @@
   </head>
   <body>
     <div class="ment">
-      <form>
+      <form id="loginform">
         <fieldset>
           <a href="../index.html">
             <img alt="Logo" src="../Homepage Images/LOGO.jpg"
@@ -68,6 +68,8 @@
     <!-- Below is the additional script for Firebase Auth -->
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
 
+    <script src="../Authentication/auth.js"></script>
+
     <script>
       var firebaseConfig = {
         apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
@@ -89,16 +91,17 @@
         auth
           .signInWithEmailAndPassword(emailin, passwordin)
           .then((cred) => {
-            console.log("Logged in user!");
-            alert("Logged in user!");
+            console.log("User Logged In Successfully!!");
+            alert("You are Successfully Logged In");
           })
           .catch((error) => {
             console.log(error.message);
             alert(error.message);
           });
       });
+
     </script>
 
-    <script src="../Authentication/auth.js"></script>
+    
   </body>
 </html>
