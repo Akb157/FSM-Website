@@ -77,9 +77,7 @@
               Sign Up
             </button>
 
-            <button class="btn OUT" id="logouts">
-              Log Out
-            </button>
+            <button class="btn OUT" id="logouts">Log Out</button>
           </div>
         </div>
       </div>
@@ -198,8 +196,6 @@
 
       firebase.initializeApp(firebaseConfig);
 
-      const auth = firebase.auth();
-
       var messagesRef = firebase.database().ref("User Data");
 
       document
@@ -234,7 +230,18 @@
           Message: work,
         });
       }
+
+      const auth = firebase.auth();
+
+      const logoutBtn = document.querySelector("#logouts");
+      logoutBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        auth.signOut();
+        console.log("User Logged out!");
+        alert("Successfully Logged out!");
+      });
     </script>
 
+    <script src="../Authentication/auth.js"></script>
   </body>
 </html>
