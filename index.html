@@ -29,7 +29,7 @@
         setTimeout(() => {
         document.getElementById("loader").style.display = "none";
         document.getElementById("content").style.display = "block";
-        }, 3000);
+        }, 2000);
         
       };
     </script>
@@ -420,25 +420,7 @@
     <!-- Below is the additional script for Firebase Auth -->
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
 
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
-        authDomain: "iafsm-website.firebaseapp.com",
-        databaseURL: "https://iafsm-website-default-rtdb.firebaseio.com",
-        projectId: "iafsm-website",
-      };
-      firebase.initializeApp(firebaseConfig);
-
-      const auth = firebase.auth();
-
-      const logoutBtn = document.querySelector("#logouts");
-      logoutBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        auth.signOut();
-        console.log("User Logged out!");
-        alert("Successfully Logged out!");
-      });
-    </script>
+    <script src="./Authentication/logout.js"></script>
 
     <script src="./Authentication/auth.js"></script>
   </body>

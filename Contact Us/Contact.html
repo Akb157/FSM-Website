@@ -81,8 +81,19 @@
           </div>
         </div>
       </div>
+      <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <!-- Below is the additional script for Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+    <script src="../Authentication/logout.js"></script>
+
+    <script src="../Authentication/signin.js"></script>
+
+    <script src="../Authentication/auth.js"></script>
     </nav>
 
+
+    
     <!-- ----------------------------------Contact------------------------------------->
 
     <div id="contact">
@@ -183,65 +194,8 @@
 
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
 
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
-        authDomain: "iafsm-website.firebaseapp.com",
-        databaseURL: "https://iafsm-website-default-rtdb.firebaseio.com",
-        projectId: "iafsm-website",
-        storageBucket: "iafsm-website.appspot.com",
-        messagingSenderId: "556790635522",
-        appId: "1:556790635522:web:b8b03f29e40d962b31db1b",
-      };
+    <script src="./contact.js"></script>
 
-      firebase.initializeApp(firebaseConfig);
-
-      var messagesRef = firebase.database().ref("User Data");
-
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", submitForm);
-
-      function submitForm(e) {
-        e.preventDefault();
-
-        // Get values
-        var name = getInputVal("name");
-        var mail = getInputVal("mail");
-        var subject = getInputVal("Subject");
-        var msg = getInputVal("work");
-
-        saveMessage(name, mail, subject, msg);
-        document.getElementById("contactForm").reset();
-      }
-
-      // Function to get get form values
-      function getInputVal(id) {
-        return document.getElementById(id).value;
-      }
-
-      // Save message to firebase
-      function saveMessage(name, mail, subject, work) {
-        var newMessageRef = messagesRef.push();
-        newMessageRef.set({
-          Name: name,
-          Mail: mail,
-          Subject: subject,
-          Message: work,
-        });
-      }
-
-      const auth = firebase.auth();
-
-      const logoutBtn = document.querySelector("#logouts");
-      logoutBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        auth.signOut();
-        console.log("User Logged out!");
-        alert("Successfully Logged out!");
-      });
-    </script>
-
-    <script src="../Authentication/auth.js"></script>
+    
   </body>
 </html>
