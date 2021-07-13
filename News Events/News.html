@@ -23,286 +23,306 @@
     />
 
     <link rel="stylesheet" href="./News.css" />
+
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000);
+      };
+    </script>
   </head>
   <body>
-    <!-- ---------------------------------------------NAVBAR--------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="LOGO" src="../Homepage Images/LOGO.jpg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../About Us/about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="./News.html">News & Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Contact Us/Contact.html">Contact Us</a>
-            </li>
-          </ul>
-
-          <div class="enter">
-            <button
-              class="btn IN"
-              id="lin"
-              onclick="window.location.href='../Log In/login.html';"
-            >
-              Log In
-            </button>
-            <button
-              class="btn IN"
-              id="sin"
-              onclick="window.location.href='../SignUP/signup.html';"
-            >
-              Sign Up
-            </button>
-
-            <button
-              class="btn OUT"
-              id="logouts"
-            >
-              Log Out
-            </button>
-
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- --------------------------------------------news and events------------------------------------>
-
-    <div class="news">
-      <img src="./News and events images/news.jpg" alt="" class="newimg" />
-
-      <div class="art">
-        <div class="rev">
-          <img
-            src="./News and events images/News tra.png"
-            alt="Card image cap"
-          />
-        </div>
-
-        <div class="rev text">
-          <h5 class="card-title">IITD-AIA Signs MoU for Smart Manufacturing</h5>
-          <p class="card-text">
-            The collaboration is aimed to develop a national educational
-            curriculum and skill building programme through a vibrant incubation
-            and administrative environment. Technology enabled Manufacturing, or
-            Industry 4.0 as it is referred is a revolution in manufacturing and
-            consumption. It alters the way decisions are made regarding what to
-            produce, where to produce, when to produce and how much to produce.
-          </p>
-
-          <a
-            href="http://iafsm.in/index.php/news-events/34-iitd-aia-signs-mou-for-smart-manufacturing"
-            class="btn btn-primary"
-            >Read More..</a
-          >
-        </div>
-      </div>
-
-      <div class="atr">
-        <div class="rev">
-          <img
-            class="card-img-top"
-            src="./News and events images/events.png"
-            alt="Card image cap"
-          />
-        </div>
-
-        <div class="rev text">
-          <h5 class="card-title">
-            New center launched in IITD for Smart Manufacturing
-          </h5>
-          <p class="card-text">
-            The Indian Institute of Technology (IIT) Delhi and the Automation
-            Industry Association (AIA) entered into a partnership on
-            04-May-2017, to help India become a leading global player in the
-            area of smart manufacturing. Smart manufacturing marries
-            technological prowess with human intelligence for producing an
-            innovative ecosystem to meet the challenges of the global market. It
-            aims to optimally use the data, resources and integrate the
-            different components for boosting productivity.
-          </p>
-
-          <a
-            href="http://iafsm.in/index.php/news-events"
-            class="btn btn-primary"
-            >Read More..</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- ------------------------------------------------Projects-------------------------------->
-
-    <div class="news">
-      <img src="./News and events images/Project.jpg" alt="" class="newimg" />
-
-      <div class="art">
-        <div class="rev">
-          <img
-            src="./News and events images/Augmented Reality.png"
-            alt="Card image cap"
-          />
-        </div>
-
-        <div class="rev text">
-          <h5 class="card-title">Augmented Reality</h5>
-          <p class="card-text">
-            Augmented reality is the integration of digital information with the
-            user's environment in real time. Unlike virtual reality, which
-            creates a totally artificial environment, augmented reality uses the
-            existing environment and overlays new information on top of it.
-          </p>
-
-          <p class="card-text">
-            AR applications can become even more powerful by augmenting them
-            with data generated by another set of technologies, revolutionizing
-            the marketplace called the Internet of Things (IoT). Combining AR
-            and the IoT allows employees, such as field maintenance workers, to
-            access vital machine operating statistics to assist in maintenance
-            decisions, or an assembly worker to visually receive pick and place
-            instructions and alerts if tools are working incorrectly or are out
-            of tolerance.
-          </p>
-
-          <a
-            href="http://iafsm.in/index.php/technologies/13-augmented-reality"
-            class="btn btn-primary"
-            >Read More..</a
-          >
-        </div>
-      </div>
-
-      <div class="atr">
-        <div class="rev">
-          <img
-            class="card-img-top"
-            src="./News and events images/IOT.webp"
-            alt="Card image cap"
-          />
-        </div>
-
-        <div class="rev text">
-          <h5 class="card-title">Industrial IOT and Cyber Physical Systems</h5>
-          <p class="card-text">
-            Traditionally, manufacturing has been considered as a process that
-            convert raw materials into physical products in the factories by
-            managing resources with best automation practices available.
-          </p>
-
-          <p class="card-text">
-            Today,
-            drivers such as technology, sustainability, optimization and the
-            need to meet customer demands have once again encouraged the
-            transformation of the manufacturing industry to become adaptive,
-            fully connected, and aware of its own power quality. One of the most
-            significant trends in manufacturing is of improved information
-            technology solutions involving the union of conventional automation
-            with the information technology.
-          </p>
-
-          <a
-            href="http://iafsm.in/index.php/news-events"
-            class="btn btn-primary"
-            >Read More..</a
-          >
-        </div>
-      </div>
+    <div id="loader">
+      <img src="../Homepage Images/loader2.gif" />
     </div>
 
-    <!-- -----------------------------------------------------Partners--------------------------- -->
-    <div class="partner">
-      <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
-      <img class="prt" src="../Homepage Images/Samarth_Udyog_Logo.jpg" alt="" />
-    </div>
+    <section id="content">
+      <!-- ---------------------------------------------NAVBAR--------------------------------------- -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="LOGO" src="../Homepage Images/LOGO.jpg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!------------------------------------------ Footer------------------------------------------------>
-    <footer class="page-footer font-small blue pt-4">
-      <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-            <!-- Content -->
-            <h5 class="text-uppercase">
-              IITD-AIA Foundation for Smart Manufacturing
-            </h5>
-            <p>
-              IITD and AIA have launched the ‘Foundation for Smart
-              Manufacturing’, a fully integrated smart manufacturing and
-              learning facility for discrete and hybrid manufacturing segments
-              such as automotive, machine tools, consumer durables and processed
-              food, and others. The Government of India has approved this
-              project as a Common Engineering Facility Centre (CEFC) under the
-              Samarth Udyog Mission.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Quick Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="../index.html">Home</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
               </li>
-              <li>
-                <a href="../About Us/about.html">About Us</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../About Us/about.html">About Us</a>
               </li>
-              <li>
-                <a href="../Contact Us/Contact.html">Contact US</a>
+              <li class="nav-item">
+                <a class="nav-link current" href="./News.html">News & Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Contact Us/Contact.html"
+                  >Contact Us</a
+                >
               </li>
             </ul>
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Contact</h5>
+            <div class="enter">
+              <button
+                class="btn IN"
+                id="lin"
+                onclick="window.location.href='../Log In/login.html';"
+              >
+                Log In
+              </button>
+              <button
+                class="btn IN"
+                id="sin"
+                onclick="window.location.href='../SignUP/signup.html';"
+              >
+                Sign Up
+              </button>
 
-            <p>
-              <i class="fa fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fa fa-home me-3"></i> IIT Delhi, India</p>
+              <button class="btn OUT" id="logouts">Log Out</button>
+            </div>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
-      </div>
-      <!-- Footer Links -->
+      </nav>
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2021 Copyright</div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+      <!-- --------------------------------------------news and events------------------------------------>
+
+      <div class="news">
+        <img src="./News and events images/news.jpg" alt="" class="newimg" />
+
+        <div class="art">
+          <div class="rev">
+            <img
+              src="./News and events images/News tra.png"
+              alt="Card image cap"
+            />
+          </div>
+
+          <div class="rev text">
+            <h5 class="card-title">
+              IITD-AIA Signs MoU for Smart Manufacturing
+            </h5>
+            <p class="card-text">
+              The collaboration is aimed to develop a national educational
+              curriculum and skill building programme through a vibrant
+              incubation and administrative environment. Technology enabled
+              Manufacturing, or Industry 4.0 as it is referred is a revolution
+              in manufacturing and consumption. It alters the way decisions are
+              made regarding what to produce, where to produce, when to produce
+              and how much to produce.
+            </p>
+
+            <a
+              href="http://iafsm.in/index.php/news-events/34-iitd-aia-signs-mou-for-smart-manufacturing"
+              class="btn btn-primary"
+              >Read More..</a
+            >
+          </div>
+        </div>
+
+        <div class="atr">
+          <div class="rev">
+            <img
+              class="card-img-top"
+              src="./News and events images/events.png"
+              alt="Card image cap"
+            />
+          </div>
+
+          <div class="rev text">
+            <h5 class="card-title">
+              New center launched in IITD for Smart Manufacturing
+            </h5>
+            <p class="card-text">
+              The Indian Institute of Technology (IIT) Delhi and the Automation
+              Industry Association (AIA) entered into a partnership on
+              04-May-2017, to help India become a leading global player in the
+              area of smart manufacturing. Smart manufacturing marries
+              technological prowess with human intelligence for producing an
+              innovative ecosystem to meet the challenges of the global market.
+              It aims to optimally use the data, resources and integrate the
+              different components for boosting productivity.
+            </p>
+
+            <a
+              href="http://iafsm.in/index.php/news-events"
+              class="btn btn-primary"
+              >Read More..</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------------Projects-------------------------------->
+
+      <div class="news">
+        <img src="./News and events images/Project.jpg" alt="" class="newimg" />
+
+        <div class="art">
+          <div class="rev">
+            <img
+              src="./News and events images/Augmented Reality.png"
+              alt="Card image cap"
+            />
+          </div>
+
+          <div class="rev text">
+            <h5 class="card-title">Augmented Reality</h5>
+            <p class="card-text">
+              Augmented reality is the integration of digital information with
+              the user's environment in real time. Unlike virtual reality, which
+              creates a totally artificial environment, augmented reality uses
+              the existing environment and overlays new information on top of
+              it.
+            </p>
+
+            <p class="card-text">
+              AR applications can become even more powerful by augmenting them
+              with data generated by another set of technologies,
+              revolutionizing the marketplace called the Internet of Things
+              (IoT). Combining AR and the IoT allows employees, such as field
+              maintenance workers, to access vital machine operating statistics
+              to assist in maintenance decisions, or an assembly worker to
+              visually receive pick and place instructions and alerts if tools
+              are working incorrectly or are out of tolerance.
+            </p>
+
+            <a
+              href="http://iafsm.in/index.php/technologies/13-augmented-reality"
+              class="btn btn-primary"
+              >Read More..</a
+            >
+          </div>
+        </div>
+
+        <div class="atr">
+          <div class="rev">
+            <img
+              class="card-img-top"
+              src="./News and events images/IOT.webp"
+              alt="Card image cap"
+            />
+          </div>
+
+          <div class="rev text">
+            <h5 class="card-title">
+              Industrial IOT and Cyber Physical Systems
+            </h5>
+            <p class="card-text">
+              Traditionally, manufacturing has been considered as a process that
+              convert raw materials into physical products in the factories by
+              managing resources with best automation practices available.
+            </p>
+
+            <p class="card-text">
+              Today, drivers such as technology, sustainability, optimization
+              and the need to meet customer demands have once again encouraged
+              the transformation of the manufacturing industry to become
+              adaptive, fully connected, and aware of its own power quality. One
+              of the most significant trends in manufacturing is of improved
+              information technology solutions involving the union of
+              conventional automation with the information technology.
+            </p>
+
+            <a
+              href="http://iafsm.in/index.php/news-events"
+              class="btn btn-primary"
+              >Read More..</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- -----------------------------------------------------Partners--------------------------- -->
+      <div class="partner">
+        <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
+        <img
+          class="prt"
+          src="../Homepage Images/Samarth_Udyog_Logo.jpg"
+          alt=""
+        />
+      </div>
+
+      <!------------------------------------------ Footer------------------------------------------------>
+      <footer class="page-footer font-small blue pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+              <!-- Content -->
+              <h5 class="text-uppercase">
+                IITD-AIA Foundation for Smart Manufacturing
+              </h5>
+              <p>
+                IITD and AIA have launched the ‘Foundation for Smart
+                Manufacturing’, a fully integrated smart manufacturing and
+                learning facility for discrete and hybrid manufacturing segments
+                such as automotive, machine tools, consumer durables and
+                processed food, and others. The Government of India has approved
+                this project as a Common Engineering Facility Centre (CEFC)
+                under the Samarth Udyog Mission.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">Quick Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="../About Us/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="../Contact Us/Contact.html">Contact US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">Contact</h5>
+
+              <p>
+                <i class="fa fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fa fa-home me-3"></i> IIT Delhi, India</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright</div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
@@ -319,7 +339,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
 
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
     <!-- Below is the additional script for Firebase Auth -->

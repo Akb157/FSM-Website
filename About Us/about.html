@@ -22,305 +22,345 @@
     />
 
     <link rel="stylesheet" href="about.css" />
+
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 1000);
+      };
+    </script>
   </head>
   <body>
-    <!-- ---------------------------------------------NAVBAR--------------------------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="LOGO" src="../Homepage Images/LOGO.jpg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="./about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../News Events/News.html">News & Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Contact Us/Contact.html">Contact Us</a>
-            </li>
-          </ul>
-
-          <div class="enter">
-            <button
-              class="btn IN"
-              id="lin"
-              onclick="window.location.href='../Log In/login.html';"
-            >
-              Log In
-            </button>
-            <button
-              class="btn IN"
-              id="sin"
-              onclick="window.location.href='../SignUP/signup.html';"
-            >
-              Sign Up
-            </button>
-
-            <button
-              class="btn OUT"
-              id="logouts"
-            >
-              Log Out
-            </button>
-
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- -------------------------------------------------------About---------------------------------------->
-    <div class="abot">
-      <h5 class="abthead">About Us</h5>
-      <p class="abtpara">
-        <strong>IIT DELHI</strong> being pioneer institute of technology has a
-        vision to contribute to India and the World through excellence in
-        scientific and technical education and research; to serve as a valuable
-        resource for industry and society; and remain a source of pride for all
-        Indians.
-      </p>
-
-      <p class="abtpara">
-        <strong>AUTOMATION INDUSTRY ASSOCIATION (AIA) &nbsp;</strong>is
-        committed to be a vibrant forum for all automation companies in India
-        spreading knowledge and creating awareness levels that make a vital
-        difference to the global competitiveness of Indian industry
-      </p>
-
-      <p class="abtpara">
-        IITD and AIA&nbsp;have jointly&nbsp;set up a fully integrated Smart
-        Manufacturing and Learning Facility for discrete and hybrid
-        manufacturing segments such as Automotive, Consumer Durables and
-        Processed Foods, etc. These segments are fast growing and compete with
-        global brands on Innovation, Quality and Customer loyalty. A demo cum
-        experience facility in North India, supported by extensive skill
-        building, MSME consultancy, multi-academia partnerships and
-        research,&nbsp;has given a huge fillip to the competitiveness of Indian
-        Manufacturing. The project imbibes technologies from Europe, Japan, USA
-        and India.
-      </p>
-
-      <div class="imgabt">
-        <img class="abtimg" src="./About Us Images/Abt.jpg" alt="" />
-      </div>
-
-      <p class="abtpara">
-        Users have access to Common Engineering Facilities in the Cyber Physical
-        Laboratory (Block-II, Mechanical Engineering Department) and a full
-        fledged Cyber Physical Factory (at Central Workshop), both situated at
-        IIT Delhi, Hauz Khas campus.
-      </p>
-
-      <p class="abtpara">
-        IAFSM, along with its partners,&nbsp;provides the following services to
-        promote innovation and adoption of Industry 4.0 solutions in order to
-        make Indian industries more globally competitive in Capital Goods
-        Sector:
-      </p>
+    <div id="loader">
+      <img src="../Homepage Images/loader2.gif" />
     </div>
-<!-- ------------------------------------------------------Team------------------------------------------ -->
-    <div class="team">
-      <h5 class="abthead">Our Team</h5>
+    <section id="content">
+      <!-- ---------------------------------------------NAVBAR--------------------------------------- -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="LOGO" src="../Homepage Images/LOGO.jpg" alt="LOGO" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="outer">
-        <div class="inner">
-          <div class="inside">
-            <img
-              class="icon"
-              src="./About Us Images/Mr. Sunil Jha.png"
-              alt=""
-            />
-            <p class="teamname">Mr. SUNIL JHA</p>
-            <p class="teampos">Director of IITD-AIA Foundation for Smart Manufacturing</p>
-          </div>
-
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Naman Kapoor.jpg" alt="" />
-            <p class="teamname">Mr. NAMAN KAPOOR</p>
-            <p class="teampos">
-              Management of Administrative and Operational Activities
-            </p>
-          </div>
-        </div>
-
-        <div class="inner">
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Parth Sharma.png" alt="" />
-            <p class="teamname">Mr. PARTH SHARMA</p>
-            <p class="teampos">
-              Project lead (Software Development) for IIoT & Robotics
-            </p>
-          </div>
-
-          <div class="inside">
-            <img
-              class="icon"
-              src="./About Us Images/Vaibhav Anand.jpg"
-              alt=""
-            />
-            <p class="teamname">Mr. VAIBHAV ANAND</p>
-            <p class="teampos">Software Developer and AR Technology Expert</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="outer">
-        <div class="inner">
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Vishnukumar.jpg" alt="" />
-            <p class="teamname">Mr. S. VISHNUKKUMAR</p>
-            <p class="teampos">Automation Engineer</p>
-          </div>
-          <div class="inside">
-            <img
-              class="icon"
-              src="./About Us Images/devesh Tarasia.jpg"
-              alt=""
-            />
-            <p class="teamname">Mr. DEVESH TARASIA</p>
-            <p class="teampos">
-              Machine learning engineer with strength in Computer Vision
-            </p>
-          </div>
-        </div>
-
-        <div class="inner">
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Rajesh Bhatt.png" alt="" />
-            <p class="teamname">Mr. RAJESH BHATT</p>
-            <p class="teampos">
-              Project Lead for Robotic Welding Cell and Multi- Process Robotic
-              Cell
-            </p>
-          </div>
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Akhilesh.jpg" alt="" />
-            <p class="teamname">Mr. AKHILESH MANCHIKANTI</p>
-            <p class="teampos">
-              Robotics engineer with strength in autonomous mobile robotics
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="outer last">
-        <div class="inner">
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Arun Kumar.png" alt="" />
-            <p class="teamname">Mr. ARUN KUMAR</p>
-            <p class="teampos">
-              Project Lead for Assembly Stations and PLC Programming
-            </p>
-          </div>
-
-          <div class="inside">
-            <img class="icon" src="./About Us Images/Preeti Joshi.png" alt="" />
-            <p class="teamname">Ms. PREETI JOSHI</p>
-            <p class="teampos">Project Lead for AR Technology</p>
-          </div>
-        </div>
-
-        <div class="inner">
-          <div class="inside lt">
-            <img class="icon" src="./About Us Images/Khushboo.jpg" alt="" />
-            <p class="teamname">Ms. KHUSHBOO SINGH</p>
-            <p class="teampos">Software developer with the strength of IIoT</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- -----------------------------------------------------Partners--------------------------- -->
-    <div class="partner">
-      <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
-      <img class="prt" src="../Homepage Images/Samarth_Udyog_Logo.jpg" alt="" />
-    </div>
-
-    <!------------------------------------------ Footer------------------------------------------------>
-    <footer class="page-footer font-small blue pt-4">
-      <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-            <!-- Content -->
-            <h5 class="text-uppercase">
-              IITD-AIA Foundation for Smart Manufacturing
-            </h5>
-            <p>
-              IITD and AIA have launched the ‘Foundation for Smart
-              Manufacturing’, a fully integrated smart manufacturing and
-              learning facility for discrete and hybrid manufacturing segments
-              such as automotive, machine tools, consumer durables and processed
-              food, and others. The Government of India has approved this
-              project as a Common Engineering Facility Centre (CEFC) under the
-              Samarth Udyog Mission.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Quick Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="../index.html">Home</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
               </li>
-              <li>
-                <a href="../News Events/News.html">News & events</a>
+              <li class="nav-item">
+                <a class="nav-link current" href="./about.html">About Us</a>
               </li>
-              <li>
-                <a href="../Contact Us/Contact.html">Contact US</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../News Events/News.html"
+                  >News & Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Contact Us/Contact.html"
+                  >Contact Us</a
+                >
               </li>
             </ul>
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Contact</h5>
+            <div class="enter">
+              <button
+                class="btn IN"
+                id="lin"
+                onclick="window.location.href='../Log In/login.html';"
+              >
+                Log In
+              </button>
+              <button
+                class="btn IN"
+                id="sin"
+                onclick="window.location.href='../SignUP/signup.html';"
+              >
+                Sign Up
+              </button>
 
-            <p>
-              <i class="fa fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fa fa-home me-3"></i> IIT Delhi, India</p>
+              <button class="btn OUT" id="logouts">Log Out</button>
+            </div>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
-      </div>
-      <!-- Footer Links -->
+      </nav>
 
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2021 Copyright</div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+      <!-- -------------------------------------------------------About---------------------------------------->
+      <div class="abot">
+        <h5 class="abthead">About Us</h5>
+        <p class="abtpara">
+          <strong>IIT DELHI</strong> being pioneer institute of technology has a
+          vision to contribute to India and the World through excellence in
+          scientific and technical education and research; to serve as a
+          valuable resource for industry and society; and remain a source of
+          pride for all Indians.
+        </p>
+
+        <p class="abtpara">
+          <strong>AUTOMATION INDUSTRY ASSOCIATION (AIA) &nbsp;</strong>is
+          committed to be a vibrant forum for all automation companies in India
+          spreading knowledge and creating awareness levels that make a vital
+          difference to the global competitiveness of Indian industry
+        </p>
+
+        <p class="abtpara">
+          IITD and AIA&nbsp;have jointly&nbsp;set up a fully integrated Smart
+          Manufacturing and Learning Facility for discrete and hybrid
+          manufacturing segments such as Automotive, Consumer Durables and
+          Processed Foods, etc. These segments are fast growing and compete with
+          global brands on Innovation, Quality and Customer loyalty. A demo cum
+          experience facility in North India, supported by extensive skill
+          building, MSME consultancy, multi-academia partnerships and
+          research,&nbsp;has given a huge fillip to the competitiveness of
+          Indian Manufacturing. The project imbibes technologies from Europe,
+          Japan, USA and India.
+        </p>
+
+        <div class="imgabt">
+          <img class="abtimg" src="./About Us Images/Abt.jpg" alt="" />
+        </div>
+
+        <p class="abtpara">
+          Users have access to Common Engineering Facilities in the Cyber
+          Physical Laboratory (Block-II, Mechanical Engineering Department) and
+          a full fledged Cyber Physical Factory (at Central Workshop), both
+          situated at IIT Delhi, Hauz Khas campus.
+        </p>
+
+        <p class="abtpara">
+          IAFSM, along with its partners,&nbsp;provides the following services
+          to promote innovation and adoption of Industry 4.0 solutions in order
+          to make Indian industries more globally competitive in Capital Goods
+          Sector:
+        </p>
+      </div>
+      <!-- ------------------------------------------------------Team------------------------------------------ -->
+      <div class="team">
+        <h5 class="abthead">Our Team</h5>
+
+        <div class="outer">
+          <div class="inner">
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Mr. Sunil Jha.png"
+                alt=""
+              />
+              <p class="teamname">Mr. SUNIL JHA</p>
+              <p class="teampos">
+                Director of IITD-AIA Foundation for Smart Manufacturing
+              </p>
+            </div>
+
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Naman Kapoor.jpg"
+                alt=""
+              />
+              <p class="teamname">Mr. NAMAN KAPOOR</p>
+              <p class="teampos">
+                Management of Administrative and Operational Activities
+              </p>
+            </div>
+          </div>
+
+          <div class="inner">
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Parth Sharma.png"
+                alt=""
+              />
+              <p class="teamname">Mr. PARTH SHARMA</p>
+              <p class="teampos">
+                Project lead (Software Development) for IIoT & Robotics
+              </p>
+            </div>
+
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Vaibhav Anand.jpg"
+                alt=""
+              />
+              <p class="teamname">Mr. VAIBHAV ANAND</p>
+              <p class="teampos">Software Developer and AR Technology Expert</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="outer">
+          <div class="inner">
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Vishnukumar.jpg"
+                alt=""
+              />
+              <p class="teamname">Mr. S. VISHNUKKUMAR</p>
+              <p class="teampos">Automation Engineer</p>
+            </div>
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/devesh Tarasia.jpg"
+                alt=""
+              />
+              <p class="teamname">Mr. DEVESH TARASIA</p>
+              <p class="teampos">
+                Machine learning engineer with strength in Computer Vision
+              </p>
+            </div>
+          </div>
+
+          <div class="inner">
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Rajesh Bhatt.png"
+                alt=""
+              />
+              <p class="teamname">Mr. RAJESH BHATT</p>
+              <p class="teampos">
+                Project Lead for Robotic Welding Cell and Multi- Process Robotic
+                Cell
+              </p>
+            </div>
+            <div class="inside">
+              <img class="icon" src="./About Us Images/Akhilesh.jpg" alt="" />
+              <p class="teamname">Mr. AKHILESH MANCHIKANTI</p>
+              <p class="teampos">
+                Robotics engineer with strength in autonomous mobile robotics
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="outer last">
+          <div class="inner">
+            <div class="inside">
+              <img class="icon" src="./About Us Images/Arun Kumar.png" alt="" />
+              <p class="teamname">Mr. ARUN KUMAR</p>
+              <p class="teampos">
+                Project Lead for Assembly Stations and PLC Programming
+              </p>
+            </div>
+
+            <div class="inside">
+              <img
+                class="icon"
+                src="./About Us Images/Preeti Joshi.png"
+                alt=""
+              />
+              <p class="teamname">Ms. PREETI JOSHI</p>
+              <p class="teampos">Project Lead for AR Technology</p>
+            </div>
+          </div>
+
+          <div class="inner">
+            <div class="inside lt">
+              <img class="icon" src="./About Us Images/Khushboo.jpg" alt="" />
+              <p class="teamname">Ms. KHUSHBOO SINGH</p>
+              <p class="teampos">
+                Software developer with the strength of IIoT
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----------------------------------------------------Partners--------------------------- -->
+      <div class="partner">
+        <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
+        <img
+          class="prt"
+          src="../Homepage Images/Samarth_Udyog_Logo.jpg"
+          alt=""
+        />
+      </div>
+
+      <!------------------------------------------ Footer------------------------------------------------>
+      <footer class="page-footer font-small blue pt-4">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+              <!-- Content -->
+              <h5 class="text-uppercase">
+                IITD-AIA Foundation for Smart Manufacturing
+              </h5>
+              <p>
+                IITD and AIA have launched the ‘Foundation for Smart
+                Manufacturing’, a fully integrated smart manufacturing and
+                learning facility for discrete and hybrid manufacturing segments
+                such as automotive, machine tools, consumer durables and
+                processed food, and others. The Government of India has approved
+                this project as a Common Engineering Facility Centre (CEFC)
+                under the Samarth Udyog Mission.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">Quick Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="../News Events/News.html">News & events</a>
+                </li>
+                <li>
+                  <a href="../Contact Us/Contact.html">Contact US</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Links -->
+              <h5 class="text-uppercase">Contact</h5>
+
+              <p>
+                <i class="fa fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fa fa-home me-3"></i> IIT Delhi, India</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright</div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
