@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="index.css" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script>
       window.onload = function () {
@@ -38,6 +38,8 @@
         }, 1500);
       };
     </script>
+
+    
   </head>
   <body>
     <div id="loader">
@@ -194,7 +196,7 @@
       <!-- ----------------------------------------Founders----------------------------------------------- -->
 
       <div class="cards">
-        <div class="card" data-aos="slide-right">
+        <div class="card" data-aos="slide-right" data-aos-offset="100" data-aos-duration="2000">
           <img
             class="card-img-top"
             src="./Homepage Images/Mr Anup Wadhwa.jpg"
@@ -218,7 +220,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="slide-up">
+        <div class="card" data-aos="slide-up" data-aos-offset="100" data-aos-duration="2000"> 
           <img
             class="card-img-top"
             src="./Homepage Images/Mr. P Sivaram.png"
@@ -238,7 +240,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="slide-left">
+        <div class="card" data-aos="slide-left" data-aos-offset="100" data-aos-duration="2000">
           <img
             class="card-img-top"
             src="./Homepage Images/Mr. Sunil Jha.png"
@@ -267,63 +269,66 @@
       <div class="article" data-aos="fade-down">
         <img class="arthead" src="./Homepage Images/Article.jpg" alt="" />
       </div>
-        <div  class="art" data-aos="slide-left" >
-          <div class="rev">
-            <img src="./Homepage Images/industry4.0.jpg" alt="Card image cap" />
-          </div>
-
-          <div class="rev text">
-            <h5 class="card-title">
-              Industry 4.0 Awareness Seminars - Greater Noida
-            </h5>
-            <p class="card-text">
-              The event primarily focused to be a holistic perspective for
-              manufacturing industries, to embark on the journey of Industry
-              4.0| SAMARTH Udyog and an assessment of concerned company
-              readiness for Industry 4.0|SAMARTH Udyog.The Program was attended
-              by 51 concerned delegates from relevant companies & academia who
-              attended a range of sessions conducted by professionals of the
-              industry addressing the problems arising in the field of
-              manufacturing along with the applications of IIoT in manufacturing
-              Industry.
-            </p>
-
-            <a
-              href="https://insights.sap.com/what-is-industry-4-0/"
-              class="btn btn-primary"
-              >Read More..</a
-            >
-          </div>
-          
+      <div class="art" data-aos="slide-left">
+        <div class="rev">
+          <img src="./Homepage Images/industry4.0.jpg" alt="Card image cap" />
         </div>
 
-        <div class="atr" data-aos="slide-right">
-          <div class="rev">
-            <img
-              class="card-img-top"
-              src="./Homepage Images/smart.jpg"
-              alt="Card image cap"
-            />
-          </div>
+        <div class="rev text">
+          <h5 class="card-title">
+            Industry 4.0 Awareness Seminars - Greater Noida
+          </h5>
+          <p class="card-text">
+            The event primarily focused to be a holistic perspective for
+            manufacturing industries, to embark on the journey of Industry 4.0|
+            SAMARTH Udyog and an assessment of concerned company readiness for
+            Industry 4.0|SAMARTH Udyog.The Program was attended by 51 concerned
+            delegates from relevant companies & academia who attended a range of
+            sessions conducted by professionals of the industry addressing the
+            problems arising in the field of manufacturing along with the
+            applications of IIoT in manufacturing Industry.
+          </p>
 
-          <div class="rev text">
-            <h5 class="card-title">Getting Automated...The Smart Way.</h5>
-            <p class="card-text">
-              SMEs constitute the backbone of manufacturing industry and the
-              quality of their products impacts overall economic development and
-              confidence of buyers. Government of India with its initiative
-              'Make-in-India' is infusing vigor into this sector to ensure
-              progression in technology and manufacturing processes.
-            </p>
-            <a
-              href="https://www.sciencedirect.com/science/article/abs/pii/S027861252030100X"
-              class="btn btn-primary"
-              >Read More..</a
-            >
-          </div>
+          <a
+            href="https://insights.sap.com/what-is-industry-4-0/"
+            class="btn btn-primary"
+            >Read More..</a
+          >
         </div>
+      </div>
+
+      <div class="atr" data-aos="slide-right">
+        <div class="rev">
+          <img
+            class="card-img-top"
+            src="./Homepage Images/smart.jpg"
+            alt="Card image cap"
+          />
+        </div>
+
+        <div class="rev text">
+          <h5 class="card-title">Getting Automated...The Smart Way.</h5>
+          <p class="card-text">
+            SMEs constitute the backbone of manufacturing industry and the
+            quality of their products impacts overall economic development and
+            confidence of buyers. Government of India with its initiative
+            'Make-in-India' is infusing vigor into this sector to ensure
+            progression in technology and manufacturing processes.
+          </p>
+          <a
+            href="https://www.sciencedirect.com/science/article/abs/pii/S027861252030100X"
+            class="btn btn-primary"
+            >Read More..</a
+          >
+        </div>
+      </div>
       <!-- -----------------------------------------------------Partners--------------------------- -->
-      <div class="partner" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-offset="250">
+      <div
+        class="partner"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        data-aos-offset="250"
+      >
         <img class="pt" src="./Homepage Images/partneres.jpeg" alt="" />
         <img
           class="prt"
@@ -333,9 +338,12 @@
       </div>
 
       <!------------------------------------------ Footer------------------------------------------------>
-      <footer class="page-footer font-small blue pt-4" data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
+      <footer
+        class="page-footer font-small blue pt-4"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
           <!-- Grid row -->
@@ -404,14 +412,6 @@
       <!-- Footer -->
     </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
-            AOS.init({
-              offset: 130,
-              duration: 1500,
-            });
-          </script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
@@ -435,5 +435,18 @@
     <script src="./Authentication/logout.js"></script>
 
     <script src="./Authentication/auth.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      let samt = 0;
+      window.addEventListener("scroll", function () {
+        samt <= 1 ? samt++ : AOS.refresh();
+      });
+      
+      AOS.init({
+        offset: 130,
+        duration: 1600,
+      });
+    </script>
   </body>
 </html>
