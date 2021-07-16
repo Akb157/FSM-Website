@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="index.css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script>
       window.onload = function () {
@@ -38,8 +38,6 @@
         }, 1500);
       };
     </script>
-
-    
   </head>
   <body>
     <div id="loader">
@@ -196,7 +194,12 @@
       <!-- ----------------------------------------Founders----------------------------------------------- -->
 
       <div class="cards">
-        <div class="card" data-aos="slide-right" data-aos-offset="100" data-aos-duration="2000">
+        <div
+          class="card"
+          data-aos="slide-right"
+          data-aos-offset="100"
+          data-aos-duration="2000"
+        >
           <img
             class="card-img-top"
             src="./Homepage Images/Mr Anup Wadhwa.jpg"
@@ -220,7 +223,12 @@
           </div>
         </div>
 
-        <div class="card" data-aos="slide-up" data-aos-offset="100" data-aos-duration="2000"> 
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          data-aos-offset="100"
+          data-aos-duration="2000"
+        >
           <img
             class="card-img-top"
             src="./Homepage Images/Mr. P Sivaram.png"
@@ -240,7 +248,12 @@
           </div>
         </div>
 
-        <div class="card" data-aos="slide-left" data-aos-offset="100" data-aos-duration="2000">
+        <div
+          class="card"
+          data-aos="slide-left"
+          data-aos-offset="100"
+          data-aos-duration="2000"
+        >
           <img
             class="card-img-top"
             src="./Homepage Images/Mr. Sunil Jha.png"
@@ -436,13 +449,13 @@
 
     <script src="./Authentication/auth.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       let samt = 0;
       window.addEventListener("scroll", function () {
         samt <= 1 ? samt++ : AOS.refresh();
       });
-      
+
       AOS.init({
         offset: 130,
         duration: 1600,

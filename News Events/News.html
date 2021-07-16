@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="./News.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script>
       window.onload = function () {
         setTimeout(() => {
@@ -102,7 +104,7 @@
       <div class="news">
         <img src="./News and events images/news.jpg" alt="" class="newimg" />
 
-        <div class="art">
+        <div class="art" data-aos="slide-left">
           <div class="rev">
             <img
               src="./News and events images/News tra.png"
@@ -132,7 +134,7 @@
           </div>
         </div>
 
-        <div class="atr">
+        <div class="atr" data-aos="slide-right">
           <div class="rev">
             <img
               class="card-img-top"
@@ -167,9 +169,9 @@
       <!-- ------------------------------------------------Projects-------------------------------->
 
       <div class="news">
-        <img src="./News and events images/Project.jpg" alt="" class="newimg" />
+        <img src="./News and events images/Project.jpg" alt="" class="newimg"  data-aos="fade-down"/>
 
-        <div class="art">
+        <div class="art" data-aos="slide-left">
           <div class="rev">
             <img
               src="./News and events images/Augmented Reality.png"
@@ -206,7 +208,7 @@
           </div>
         </div>
 
-        <div class="atr">
+        <div class="atr" data-aos="slide-right">
           <div class="rev">
             <img
               class="card-img-top"
@@ -245,7 +247,9 @@
       </div>
 
       <!-- -----------------------------------------------------Partners--------------------------- -->
-      <div class="partner">
+      <div class="partner" data-aos="zoom-in-up"
+      data-aos-duration="1500"
+      data-aos-offset="250">
         <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
         <img
           class="prt"
@@ -255,7 +259,9 @@
       </div>
 
       <!------------------------------------------ Footer------------------------------------------------>
-      <footer class="page-footer font-small blue pt-4">
+      <footer class="page-footer font-small blue pt-4" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000">
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
           <!-- Grid row -->
@@ -347,5 +353,19 @@
     <script src="../Authentication/logout.js"></script>
 
     <script src="../Authentication/auth.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      let samt = 0;
+      window.addEventListener("scroll", function () {
+        samt <= 1 ? samt++ : AOS.refresh();
+      });
+
+      AOS.init({
+        offset: 130,
+        duration: 1600,
+      });
+    </script>
+
   </body>
 </html>

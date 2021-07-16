@@ -23,6 +23,9 @@
 
     <link rel="stylesheet" href="about.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <script>
       window.onload = function () {
         setTimeout(() => {
@@ -129,7 +132,7 @@
         </p>
 
         <div class="imgabt">
-          <img class="abtimg" src="./About Us Images/Abt.jpg" alt="" />
+          <img class="abtimg" src="./About Us Images/Abt.jpg" alt="" data-aos="fade-down" />
         </div>
 
         <p class="abtpara">
@@ -147,12 +150,12 @@
         </p>
       </div>
       <!-- ------------------------------------------------------Team------------------------------------------ -->
-      <div class="team">
-        <h5 class="abthead">Our Team</h5>
+      <div class="team" >
+        <h5 class="abthead" data-aos="flip-down" data-aos-offset="300">Our Team</h5>
 
         <div class="outer">
           <div class="inner">
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Mr. Sunil Jha.png"
@@ -164,7 +167,7 @@
               </p>
             </div>
 
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Naman Kapoor.jpg"
@@ -178,7 +181,7 @@
           </div>
 
           <div class="inner">
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Parth Sharma.png"
@@ -190,7 +193,7 @@
               </p>
             </div>
 
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Vaibhav Anand.jpg"
@@ -204,7 +207,7 @@
 
         <div class="outer">
           <div class="inner">
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Vishnukumar.jpg"
@@ -213,7 +216,7 @@
               <p class="teamname">Mr. S. VISHNUKKUMAR</p>
               <p class="teampos">Automation Engineer</p>
             </div>
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/devesh Tarasia.jpg"
@@ -227,7 +230,7 @@
           </div>
 
           <div class="inner">
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Rajesh Bhatt.png"
@@ -239,7 +242,7 @@
                 Cell
               </p>
             </div>
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img class="icon" src="./About Us Images/Akhilesh.jpg" alt="" />
               <p class="teamname">Mr. AKHILESH MANCHIKANTI</p>
               <p class="teampos">
@@ -251,7 +254,7 @@
 
         <div class="outer last">
           <div class="inner">
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img class="icon" src="./About Us Images/Arun Kumar.png" alt="" />
               <p class="teamname">Mr. ARUN KUMAR</p>
               <p class="teampos">
@@ -259,7 +262,7 @@
               </p>
             </div>
 
-            <div class="inside">
+            <div class="inside" data-aos="zoom-in">
               <img
                 class="icon"
                 src="./About Us Images/Preeti Joshi.png"
@@ -271,7 +274,7 @@
           </div>
 
           <div class="inner">
-            <div class="inside lt">
+            <div class="inside lt" data-aos="zoom-in">
               <img class="icon" src="./About Us Images/Khushboo.jpg" alt="" />
               <p class="teamname">Ms. KHUSHBOO SINGH</p>
               <p class="teampos">
@@ -283,7 +286,9 @@
       </div>
 
       <!-- -----------------------------------------------------Partners--------------------------- -->
-      <div class="partner">
+      <div class="partner" data-aos="zoom-in-up"
+      data-aos-duration="1500"
+      data-aos-offset="250">
         <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
         <img
           class="prt"
@@ -293,7 +298,9 @@
       </div>
 
       <!------------------------------------------ Footer------------------------------------------------>
-      <footer class="page-footer font-small blue pt-4">
+      <footer class="page-footer font-small blue pt-4" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000">
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
           <!-- Grid row -->
@@ -385,5 +392,20 @@
     <script src="../Authentication/logout.js"></script>
 
     <script src="../Authentication/auth.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      let samt = 0;
+      window.addEventListener("scroll", function () {
+        samt <= 1 ? samt++ : AOS.refresh();
+      });
+
+      AOS.init({
+        offset: 130,
+        duration: 1600,
+      });
+      
+    </script>
+
   </body>
 </html>
