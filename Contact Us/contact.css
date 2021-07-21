@@ -21,8 +21,8 @@ html{
         right: 0;
         bottom: 0;
         left: 0;
-        width: 40%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
       }
       #loader img {
         width: 100%;
@@ -181,7 +181,8 @@ html{
   #contact .contimg img{
    width: 95%;
    position: relative;
-   top: 35%;
+   top: 20%;
+   right: 20px;
 }
 
 /* --------------------------------------------------Information---------------------------------------- */
@@ -305,6 +306,7 @@ h5{
     }
     #contact .contimg img{
     width: 95%;
+    right: 0px;
     }
 
     .infor{

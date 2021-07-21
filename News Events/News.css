@@ -21,8 +21,8 @@ html{
         right: 0;
         bottom: 0;
         left: 0;
-        width: 40%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
       }
       #loader img {
         width: 100%;
@@ -101,10 +101,10 @@ html{
 /* ------------------------------------------news and events----------------------- */
 
 .newimg{
-    width: 85%;
-    height: 400px;
+    width: 95%;
+    height: 350px;
     display: block;
-    margin:  4rem auto;
+    margin:  5rem auto;
 }
 
 .proimg{
@@ -251,8 +251,8 @@ html{
     /* ---------------------------------------------news---------------------------------------- */
     .newimg{
         margin-top: 2rem;
-        width: 90%;
-        height: 175px
+        width: 95%;
+        height: 150px;
     }
 
     .proimg{
