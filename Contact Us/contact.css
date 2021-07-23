@@ -13,6 +13,12 @@ html{
     #content {
         display: none;
         background-color: black;
+        background-image:
+  url("./Contact US Images/backgrnd.jpg");
+  background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
       }
       #loader {
         position: absolute;
