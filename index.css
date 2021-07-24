@@ -1,5 +1,7 @@
 html {
   overflow-x: hidden;
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=160972), auto;
+  
 }
 
 body {
@@ -14,12 +16,11 @@ body {
   display: none;
   background-color: black;
 
-  background-image:
-  url("./Homepage Images/Backgrnd.jpg");
+  background-image: url("./Homepage Images/Backgrnd.jpg");
   background-size: cover;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #loader {
   position: absolute;
@@ -112,20 +113,20 @@ body {
 }
 
 .carousel-control-next-icon {
-    background-image: url(https://static.thenounproject.com/png/74837-200.png);
-    transform: scaleX(-1);
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    right: 10px;
+  background-image: url(https://static.thenounproject.com/png/74837-200.png);
+  transform: scaleX(-1);
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  right: 10px;
 }
 
 .carousel-control-prev-icon {
-    background-image: url(https://static.thenounproject.com/png/74837-200.png);
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    left: 10px;
+  background-image: url(https://static.thenounproject.com/png/74837-200.png);
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 10px;
 }
 
 /* --------------------------------------Founder-------------------------------------- */
@@ -300,12 +301,11 @@ h5 {
   .carousel-control-next-icon {
     height: 45px;
     width: 45px;
-}
+  }
 
-.carousel-control-prev-icon {
+  .carousel-control-prev-icon {
     height: 45px;
     width: 45px;
-
   }
   /* ----------------------------------Founder------------------------------------------------- */
 
