@@ -11,10 +11,10 @@ html {
     background-color: black;
 
     background-image: url("./bck.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   .ment {
@@ -92,6 +92,9 @@ html {
   
   /* ---------------------------Responsiveness--------------------------- */
   @media (max-width: 800px) {
+    body{
+      background-position: 62%;
+    }
     .ment {
       width: 90%;
       margin: auto;
