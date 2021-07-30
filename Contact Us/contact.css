@@ -319,7 +319,13 @@ h5{
     margin-top: 3rem;
 }
 
-
+#back{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+ }
 
     /* ------------------------------------------Responsiveness--------------------------------------- */
 @media (max-width: 800px){

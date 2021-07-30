@@ -28,7 +28,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <script>
       window.onload = function () {
         setTimeout(() => {
@@ -135,7 +134,12 @@
         </p>
 
         <div class="imgabt">
-          <img class="abtimg" src="./About Us Images/Abt.jpg" alt="" data-aos="fade-down" />
+          <img
+            class="abtimg"
+            src="./About Us Images/Abt.jpg"
+            alt=""
+            data-aos="fade-down"
+          />
         </div>
 
         <p class="abtpara">
@@ -153,8 +157,10 @@
         </p>
       </div>
       <!-- ------------------------------------------------------Team------------------------------------------ -->
-      <div class="team" >
-        <h5 class="abthead" data-aos="flip-down" data-aos-offset="300">Our Team</h5>
+      <div class="team">
+        <h5 class="abthead" data-aos="flip-down" data-aos-offset="300">
+          Our Team
+        </h5>
 
         <div class="outer">
           <div class="inner">
@@ -289,9 +295,12 @@
       </div>
 
       <!-- -----------------------------------------------------Partners--------------------------- -->
-      <div class="partner" data-aos="zoom-in-up"
-      data-aos-duration="1500"
-      data-aos-offset="250">
+      <div
+        class="partner"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        data-aos-offset="250"
+      >
         <img class="pt" src="../Homepage Images/partneres.jpeg" alt="" />
         <img
           class="prt"
@@ -301,9 +310,12 @@
       </div>
 
       <!------------------------------------------ Footer------------------------------------------------>
-      <footer class="page-footer font-small blue pt-4" data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000">
+      <footer
+        class="page-footer font-small blue pt-4"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
           <!-- Grid row -->
@@ -370,6 +382,40 @@
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
+
+      <img
+        id="back"
+        h
+        src="../Contact Us/Contact US Images/back.png"
+        alt="top"
+        onclick="topFunction()"
+      />
+
+      <script>
+        //Get the button:
+        mybutton = document.getElementById("back");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
     </section>
 
     <script
@@ -407,8 +453,6 @@
         offset: 130,
         duration: 1600,
       });
-      
     </script>
-
   </body>
 </html>
