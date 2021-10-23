@@ -1,12 +1,12 @@
- const firebaseConfig = {
-     apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
-     authDomain: "iafsm-website.firebaseapp.com",
-     databaseURL: "https://iafsm-website-default-rtdb.firebaseio.com",
-     projectId: "https://iafsm-website-default-rtdb.firebaseio.com/",
-     storageBucket: "iafsm-website.appspot.com",
-     messagingSenderId: "556790635522",
-     appId: "1:556790635522:web:b8b03f29e40d962b31db1b",
-   };
+// const firebaseConfig = {
+//     apiKey: "AIzaSyAelqwv1A1w4SpQxJa5rUIpczXWJalR8Ow",
+//     authDomain: "iafsm-website.firebaseapp.com",
+//     databaseURL: "https://iafsm-website-default-rtdb.firebaseio.com",
+//     projectId: "https://iafsm-website-default-rtdb.firebaseio.com/",
+//     storageBucket: "iafsm-website.appspot.com",
+//     messagingSenderId: "556790635522",
+//     appId: "1:556790635522:web:b8b03f29e40d962b31db1b",
+//   };
 
 firebase.initializeApp(firebaseConfig);
 
